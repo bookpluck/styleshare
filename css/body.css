@@ -1,0 +1,56 @@
+html {
+  background: White;
+  color: #222;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 16px;
+  line-height: 1.4211;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    padding-top: 2rem;
+  }
+}
+
+main {
+  min-height: 90vh;
+  font-size: var(--body-font-size);
+  line-height: 1.4;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45rem;
+}
+
+aside {
+  font-size: var(--body-font-size);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+@media only screen and (min-width: 1025px) {
+  aside {
+    padding: 0 0 2rem;
+  }
+}
+
+footer {
+}
+
+a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,370 @@
+article {
+  padding: 0 1rem 1rem 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+@media only screen and (min-width: 1025px) {
+  article {
+    padding: 0 0 1rem;
+  }
+}
+
+article > aside {
+  margin: 2.25rem 0;
+  overflow-wrap: break-word;
+  padding: 0 2.5rem 0 2.5rem;
+  border-bottom: 0;
+}
+
+article aside strong {
+  display: block;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 2.625rem;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+@media only screen and (min-width: 1025px) {
+  article aside strong {
+    font-weight: bold;
+    font-size: var(--body-font-size);
+  }
+}
+
+article aside small {
+  color: #333333;
+  display: block;
+  font-size: var(--body-font-size);
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+@media only screen and (min-width: 1025px) {
+  article aside small {
+    font-size: var(--body-font-size);
+  }
+}
+
+article aside p {
+  text-align: center;
+}
+
+article section {
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+article blockquote {
+  border-radius: 3px;
+  margin-block-end: 0.75rem;
+  margin-block-start: 0.75rem;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  overflow-wrap: break-word;
+  padding: 0 2.5rem 0 2.5rem;
+  z-index: 1;
+}
+
+article blockquote p {
+  line-height: 1.4;
+}
+
+article hr {
+  border-bottom: none;
+  border-top: 2px solid black;
+  margin-top: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+
+article hgroup {
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 1025px) {
+  article hgroup {
+    max-width: 45rem;
+  }
+}
+
+article hgroup p {
+  font-size: var(--body-font-size);
+  font-style: normal;
+  text-align: left;
+}
+
+article h1 {
+  font-size: var(--h1-font-size);
+  line-height: 1.1;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1025px) {
+  article h1 {
+    font-size: var(--h1-font-size);
+    font-weight: normal;
+  }
+}
+
+article hgroup h2 {
+  color: #6e6e73;
+  font-size: var(--body-font-size);
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1025px) {
+  article hgroup h2 {
+    font-size: var(--body-font-size);
+    font-weight: normal;
+  }
+}
+
+article h3 {
+  font-size: var(--body-font-size);
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+article h3 a {
+  color: #222222;
+  line-height: 1;
+  text-decoration: none;
+}
+
+article h4 {
+  font-size: var(--body-font-size);
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 4rem 0 0;
+  text-align: center;
+}
+
+article img {
+  max-height: 30rem;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+  article img {
+    display: block;
+    margin: auto;
+    max-height: 90vh;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+article figure {
+  /* make full-width: article has 1rem of horizontal padding */
+  margin: 0 -1rem 3rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  article figure {
+    margin: 0 0 1.25rem;
+    text-align: center;
+  }
+}
+
+article figure figcaption {
+  font-size: 0.875rem;
+  color: #333333;
+  margin-top: 0;
+  padding: 0.25rem 0;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+
+@media only screen and (min-width: 1025px) {
+  article figure figcaption {
+    margin-top: 0;
+    padding-top: 0.25rem;
+  }
+}
+
+article figure figcaption small {
+  display: block;
+  padding-right: 0.25rem;
+  text-align: right;
+}
+
+article mark {
+  background-color: Khaki;
+}
+
+article p {
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 1.1875rem;
+}
+
+article ul {
+  margin-top: 0;
+}
+
+article li {
+  margin-bottom: 0.375rem;
+  line-height: 1.4;
+}
+
+/* Every article on a page after the first is assumed to need a compact format */
+@media only screen and (min-width: 1025px) {
+  main article:nth-of-type(2) {
+    position: relative;
+  }
+
+  main article:nth-of-type(2) hgroup::before {
+    content: "More Articles";
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    border: 1px solid var(--border-color);
+    padding: 0.25rem 0.5rem;
+    background-color: White;
+  }
+}
+
+main article:not(:first-of-type) {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1025px) {
+  main article:not(:first-of-type) {
+    padding: 0 0 2rem;
+    min-height: 10rem;
+  }
+}
+
+main article:not(:first-of-type) img {
+  display: none;
+}
+
+@media only screen and (min-width: 1025px) {
+  main article:not(:first-of-type) img {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+main article:not(:first-of-type) figure {
+  display: none;
+}
+
+@media only screen and (min-width: 1025px) {
+  main article:not(:first-of-type) figure {
+    width: auto;
+    display: block;
+    margin: 0 2rem 1rem 0;
+    text-align: center;
+    float: left;
+  }
+}
+
+main article:not(:first-of-type) h1 {
+  font-size: var(--h1-font-size);
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1025px) {
+  main article:not(:first-of-type) h1 {
+    font-size: var(--h1-font-size);
+  }
+}
+
+main article:not(:first-of-type) hgroup h2 {
+  font-size: var(--body-font-size);
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1025px) {
+  main article:not(:first-of-type) hgroup h2 {
+    margin-bottom: 0.25rem;
+    font-size: var(--body-font-size);
+    font-weight: normal;
+  }
+}
+
+main article:not(:first-of-type) hgroup {
+  margin-bottom: 1rem;
+}
+
+main article:not(:first-of-type) p {
+}
+
+main article:nth-of-type(n+4) p {
+  display: none
+}
+
+main article:nth-of-type(n+4) hgroup p {
+  display: block;
+}
+
+main article:nth-of-type(n+4) h1 {
+  font-size: var(--h1-font-size);
+}
+
+main article:nth-of-type(n+4) hgroup {
+  margin-bottom: 0.25rem;
+  padding-bottom: 0;
+}
+
+main article:nth-of-type(n+8) {
+  min-height: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+main article:nth-of-type(n+8) figure {
+  display: none;
+}
+
+main article:nth-of-type(n+8) hgroup p {
+  display: none;
+}
+
+main article:nth-of-type(n+8) hgroup h1 {
+  font-size: var(--body-font-size);
+  display: inline;
+}
+
+main article:nth-of-type(n+8) hgroup h1::after {
+  content: "—";
+}
+
+main article:nth-of-type(n+8) hgroup h2 {
+  font-size: var(--body-font-size);
+  display: inline;
+}
+
+main article:last-of-type {
+  border-bottom: none;
+}

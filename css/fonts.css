@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Heuristica';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/Heuristica-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Heuristica';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/Heuristica-Italic.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Heuristica';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/Heuristica-Bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Heuristica';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/Heuristica-BoldItalic.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/FrankRuhlLibre-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/FrankRuhlLibre-Bold.ttf') format('truetype')
+}
