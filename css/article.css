@@ -102,36 +102,33 @@ article hgroup p {
 }
 
 article h1 {
+  font-family: var(--h1-font-family);
   font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
   line-height: 1.1;
-  font-weight: normal;
-  margin-top: 0;
   margin-bottom: 0.25rem;
+  margin-top: 0;
   text-align: left;
 }
 
 @media only screen and (min-width: 1025px) {
   article h1 {
-    font-size: var(--h1-font-size);
-    font-weight: normal;
   }
 }
 
-article hgroup h2 {
-  color: #6e6e73;
-  font-size: var(--body-font-size);
+article hgroup > h2 {
+  font-family: var(--h2-font-family);
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
   line-height: 1.4;
-  font-weight: 400;
+  margin-bottom: 0.75rem;
   margin-top: 0;
-  margin-bottom: 0.25rem;
   text-align: left;
 }
 
-@media only screen and (min-width: 1025px) {
-  article hgroup h2 {
-    font-size: var(--body-font-size);
-    font-weight: normal;
-  }
+article h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.25rem;
 }
 
 article h3 {
@@ -214,7 +211,7 @@ article mark {
 article p {
   line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 1.1875rem;
+  margin-bottom: 0.75rem;
 }
 
 article ul {
@@ -283,7 +280,6 @@ main article:not(:first-of-type) figure {
 
 main article:not(:first-of-type) h1 {
   font-size: var(--h1-font-size);
-  font-weight: normal;
   line-height: 1.1;
   margin-bottom: 0.25rem;
   margin-top: 0;
@@ -297,19 +293,17 @@ main article:not(:first-of-type) h1 {
 }
 
 main article:not(:first-of-type) hgroup h2 {
-  font-size: var(--body-font-size);
   line-height: 1.4;
-  font-weight: 400;
+  font-family: var(--h2-font-family);
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   text-align: left;
 }
 
 @media only screen and (min-width: 1025px) {
   main article:not(:first-of-type) hgroup h2 {
-    margin-bottom: 0.25rem;
-    font-size: var(--body-font-size);
-    font-weight: normal;
   }
 }
 
@@ -351,17 +345,10 @@ main article:nth-of-type(n+8) hgroup p {
   display: none;
 }
 
-main article:nth-of-type(n+8) hgroup h1 {
-  font-size: var(--body-font-size);
-  display: inline;
-}
-
-main article:nth-of-type(n+8) hgroup h1::after {
-  content: "—";
-}
-
 main article:nth-of-type(n+8) hgroup h2 {
-  font-size: var(--body-font-size);
+  font-family: var(--h2-font-family);
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
   display: inline;
 }
 
