@@ -1,9 +1,9 @@
 :root {
-  --body-font-size: 1rem; /* 18rem */
-  --h1-font-size: 2.5rem;
-  --h1-font-family: 'Bebas Neue';
-  --h1-font-weight: 400;
-  --h2-font-size: 1rem;
+  --body-font-size: 1.063rem; /* 18rem */
+  --h1-font-size: 2rem;
+  --h1-font-family: Heuristica;
+  --h1-font-weight: 700;
+  --h2-font-size: 1.125rem;
   --h2-font-family: inherit;
   --h2-font-weight: 700;
   --border-color: #d0d0d0;

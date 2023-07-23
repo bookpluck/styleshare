@@ -106,7 +106,7 @@ article h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
   line-height: 1.1;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   margin-top: 0;
   text-align: left;
 }
@@ -279,7 +279,7 @@ main article:not(:first-of-type) figure {
 }
 
 main article:not(:first-of-type) h1 {
-  font-size: var(--h1-font-size);
+  font-size: 1.75rem;
   line-height: 1.1;
   margin-bottom: 0.25rem;
   margin-top: 0;
@@ -288,7 +288,7 @@ main article:not(:first-of-type) h1 {
 
 @media only screen and (min-width: 1025px) {
   main article:not(:first-of-type) h1 {
-    font-size: var(--h1-font-size);
+    font-size: 1.75rem;
   }
 }
 
@@ -323,7 +323,7 @@ main article:nth-of-type(n+4) hgroup p {
 }
 
 main article:nth-of-type(n+4) h1 {
-  font-size: var(--h1-font-size);
+  font-size: 1.5rem;
 }
 
 main article:nth-of-type(n+4) hgroup {
@@ -348,7 +348,7 @@ main article:nth-of-type(n+8) hgroup p {
 main article:nth-of-type(n+8) hgroup h2 {
   font-family: var(--h2-font-family);
   font-size: var(--h2-font-size);
-  font-weight: var(--h2-font-weight);
+  font-weight: 400;
   display: inline;
 }
 
